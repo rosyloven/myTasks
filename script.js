@@ -1,4 +1,4 @@
-let arrCitizens = [
+const arrCitizens = [
     {
     name: "Gregoriy Lapinskiy",
     height: "175",
