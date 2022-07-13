@@ -50,10 +50,10 @@ const obj = {
 }
 
 const getCombinedArray = (array, object) => {
-    const newArray = console.log(array.slice(array.splice(2, 0, object)));
+    const newArray = array.slice(array.splice(2, 0, object));
     return newArray;
     }
-getCombinedArray(arrCitizens, obj);
+console.log(getCombinedArray(arrCitizens, obj));
 
 
 
