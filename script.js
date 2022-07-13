@@ -40,7 +40,7 @@ let arrCitizens = [
 ];
 
 const getFiltredArray = (array, arrayGender) => {
-    const result = array.filter(person => person.gender === arrayGender);
-    console.log(result);
+    const result = array.filter(person => person.gender === arrayGender.toLowerCase());
+    return result;
     }
-getFiltredArray(arrCitizens, 'male');
+getFiltredArray(arrCitizens, 'FEmALe');
