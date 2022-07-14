@@ -50,7 +50,7 @@ const obj = {
 }
 
 const addObjToArray = (array, object, addIndex) => {
-    const newArray = [...array.slice(0, addIndex), {...object}, ...array.slice(addIndex)];
+    const newArray = [...array.slice(0, addIndex), object, ...array.slice(addIndex)];
     return newArray;
 }   
     console.log(addObjToArray(arrCitizens, obj, 3));
