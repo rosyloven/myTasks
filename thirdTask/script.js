@@ -49,11 +49,11 @@ const obj = {
     "gender":"female"
 }
 
-const getCombinedArray = (array, object) => {
-    const newArray = array.slice(array.splice(2, 0, object));
+const addObjToArray = (array, object, addIndex) => {
+    const newArray = [...array.slice(0, addIndex), {...object}, ...array.slice(addIndex)];
     return newArray;
-    }
-console.log(getCombinedArray(arrCitizens, obj));
+}   
+    console.log(addObjToArray(arrCitizens, obj, 3));
 
 
 
