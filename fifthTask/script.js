@@ -48,17 +48,7 @@ const obj = {
     "birth_year":"XXXXXX",
     "gender":"female",
 }
-//Четвертое задание
-/*
-const findInArray = (array, nameValue) => {
-    const foundObject = array.find(item => {
-        return item.name.toLowerCase() === nameValue.toLowerCase();
-    })
-    return foundObject;
-};
-console.log(findInArray(arrCitizens, "vladislav mOretti"));
-*/
-//Пятое задание
+
 const sortByGender = (array, genderValue) => {
     if (genderValue === 'male') {
         const sortedByMale = [...array].sort((a, b) => {
@@ -79,13 +69,3 @@ const sortByGender = (array, genderValue) => {
 }
 console.log(sortByGender(arrCitizens, 'male'));
 
-
-/*
-const newArray = [...arrCitizens];
-const sorted = newArray.sort((a, b) => {
-    if (a.gender > b.gender) return -1;
-})
-console.log(sorted);
-
-console.log(arrCitizens);
-*/
