@@ -53,6 +53,8 @@ const findInArray = (array, nameValue) => {
     const foundObject = array.find(item => {
         return item.name.toLowerCase() === nameValue.toLowerCase();
     })
-    return foundObject;
-};
+    if (typeof foundObject !== 'undefined') {
+        return foundObject;  
+    } else return 'Not found'
+}
 console.log(findInArray(arrCitizens, "vladislav mOretti"));
