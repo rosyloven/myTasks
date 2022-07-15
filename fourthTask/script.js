@@ -49,9 +49,9 @@ const obj = {
     "gender":"female",
 }
 
-const findInArray = (array, nameProperty) => {
+const findInArray = (array, nameValue) => {
     const foundObject = array.find(item => {
-        return item.name.toLowerCase() === nameProperty.toLowerCase();
+        return item.name.toLowerCase() === nameValue.toLowerCase();
     })
     return foundObject;
 };
