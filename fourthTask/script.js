@@ -56,10 +56,3 @@ const findInArray = (array, nameProperty) => {
     return foundObject;
 };
 console.log(findInArray(arrCitizens, "vladislav mOretti"));
-
-
-//const findObject = arrCitizens.find(item => {
-//    return item.name === "Victoriiiia Morth";
-//})
-
-//console.log(findObject);
