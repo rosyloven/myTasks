@@ -50,9 +50,7 @@ const obj = {
 }
 const sortByGender = (array, genderValue) => {
     const result = [...array].sort((person) => {
-        if(person.gender.toLowerCase() === genderValue.toLowerCase()) {
-            return -1;   
-        }     
+        if(person.gender.toLowerCase() === genderValue.toLowerCase()) return -1;     
     })
     return result;
 }
