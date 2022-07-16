@@ -48,10 +48,7 @@ const obj = {
     "birth_year":"XXXXXX",
     "gender":"female",
 }
-const sortByGender = (array, genderValue) => {
-    const result = [...array].sort((person) => {
+const sortByGender = (array, genderValue) => [...array].sort((person) => {
         if(person.gender.toLowerCase() === genderValue.toLowerCase()) return -1;     
     })
-    return result;
-}
 console.log(sortByGender(arrCitizens, 'mAle'));
