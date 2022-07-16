@@ -48,7 +48,17 @@ const obj = {
     "birth_year":"XXXXXX",
     "gender":"female",
 }
+const findInArray = (array, nameValue) => {
+    const result = array.filter(el => el.name.toLowerCase() === nameValue.toLowerCase());
+    return result;
+}
+console.log(findInArray(arrCitizens, "Vladislav moReTti"));
 
+
+
+
+
+/*
 const findInArray = (array, nameValue) => {
     const foundObject = array.find(item => {
         return item.name.toLowerCase() === nameValue.toLowerCase();
@@ -58,3 +68,4 @@ const findInArray = (array, nameValue) => {
     } else return 'Not found'
 }
 console.log(findInArray(arrCitizens, "vladislav mOretti"));
+*/
