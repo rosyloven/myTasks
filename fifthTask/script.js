@@ -48,24 +48,12 @@ const obj = {
     "birth_year":"XXXXXX",
     "gender":"female",
 }
-
 const sortByGender = (array, genderValue) => {
-    if (genderValue === 'male') {
-        const sortedByMale = [...array].sort((a, b) => {
-            if (a.gender > b.gender) {
-                return -1
-        }
+    const result = [...array].sort((person) => {
+        if(person.gender.toLowerCase() === genderValue.toLowerCase()) {
+            return -1;   
+        }     
     })
-    return sortedByMale;
-    }
-    if (genderValue === 'female') {
-        const sortedByFemale = [...array].sort((a, b) => {
-            if (a.gender < b.gender) {
-                return -1
-        }
-    })
-    return sortedByFemale;
-    }
+    return result;
 }
-console.log(sortByGender(arrCitizens, 'male'));
-
+console.log(sortByGender(arrCitizens, 'mAle'));
