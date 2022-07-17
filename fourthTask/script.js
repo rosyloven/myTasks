@@ -38,34 +38,8 @@ const arrCitizens = [
     gender: "female",
     }, 
 ];
-const obj = {  
-    "name":"some name",
-    "height":"182",
-    "mass":"77",
-    "hair_color":"black",
-    "skin_color":"red",
-    "eye_color":"brown",
-    "birth_year":"XXXXXX",
-    "gender":"female",
-}
 const findInArray = (array, nameValue) => {
     const result = array.filter(el => el.name.toLowerCase() === nameValue.toLowerCase());
-    return result;
+    return result.length !== 0 ? result : 'Not found'
 }
 console.log(findInArray(arrCitizens, "Vladislav moReTti"));
-
-
-
-
-
-/*
-const findInArray = (array, nameValue) => {
-    const foundObject = array.find(item => {
-        return item.name.toLowerCase() === nameValue.toLowerCase();
-    })
-    if (typeof foundObject !== 'undefined') {
-        return foundObject;  
-    } else return 'Not found'
-}
-console.log(findInArray(arrCitizens, "vladislav mOretti"));
-*/
