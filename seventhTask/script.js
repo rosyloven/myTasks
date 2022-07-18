@@ -44,11 +44,6 @@ const arrCitizens = [
     }, 
 ];
 const deleteObjByHeight = (array, objHeight) => {
-    return [...array].reduce((newArr, user) => {
-        if (Number(user.height) !== objHeight) {
-            names.push(user);
-        }
-        return newArr;
-    }, [])
+    return [...array].filter(person => Number(person.height) !== objHeight);
 }
 console.log(deleteObjByHeight(arrCitizens, 175));
