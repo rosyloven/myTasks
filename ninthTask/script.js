@@ -42,29 +42,26 @@ const arrVillagers = [
     gender: "male",
     }, 
 ]
+const mergeArrays = (arrayOne, arrayTwo) => {
+    return [...arrayOne, ...arrayTwo];
+}
+console.log(mergeArrays(arrCitizens, arrVillagers));
+
+//Второй способ
 /*
+const mergeArrays = (arrayOne, arrayTwo) => 
+    return arrayOne.concat(arrayTwo);
+};
+console.log(mergeArrays(arrCitizens, arrVillagers));
+*/
+
+/* ------ Способ с нерабочим удалением дубликатов (Не знаю, почему не работает, возможно в массиве обьектов вообще нет смысла удалять дубликаты)
 const mergeArrays = (arrayOne, arrayTwo) => {
     const prepeared = [...arrayOne, ...arrayTwo];
     const result = prepeared.filter((element, index) => {
         return prepeared.indexOf(element) === index;
     });
     return result;
-}
-console.log(mergeArrays(arrCitizens, arrVillagers));
-*/
-
-//Второй способ
-/*
-const mergeArrays = (arrayOne, arrayTwo) => {
-    const result = new Set(arrayOne.concat(arrayTwo))
-    return result;
-};
-console.log(mergeArrays(arrCitizens, arrVillagers));
-*/
-//Первый способ
-/*
-const mergeArrays = (arrayOne, arrayTwo) => {
-    return [...arrayOne, ...arrayTwo]
 }
 console.log(mergeArrays(arrCitizens, arrVillagers));
 */
