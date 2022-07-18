@@ -44,24 +44,11 @@ const arrCitizens = [
     }, 
 ];
 const deleteObjByHeight = (array, objHeight) => {
-    return [...array].reduce((names, user) => {
+    return [...array].reduce((newArr, user) => {
         if (Number(user.height) !== objHeight) {
             names.push(user);
         }
-        return names;
+        return newArr;
     }, [])
 }
 console.log(deleteObjByHeight(arrCitizens, 175));
-
-
-
-
-
-
-
-/* Шестое задание
-const sortFromIndex = (array, sortIndexFrom, sortIndexTo) => {
-    return array.slice(sortIndexFrom, sortIndexTo)
-}
-console.log(sortFromIndex(arrCitizens, 2, 5));
-*/
