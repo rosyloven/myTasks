@@ -43,15 +43,16 @@ const arrCitizens = [
     gender: "female",
     }, 
 ];
-const deleteObjByHeight = (array, objHeight) => {
-    return [...array].reduce((names, user) => {
-        if (Number(user.height) !== objHeight) {
-            names.push(user);
-        }
-        return names;
-    }, [])
+const sortFromIndex = (array) => {
+    return array.slice(2, 5)
 }
-console.log(deleteObjByHeight(arrCitizens, 175));
+console.log(sortFromIndex(arrCitizens));
+
+//Оптимизированная версия
+const sortFromIndexOptimized = (array, sortIndexFrom, sortIndexTo) => {
+    return array.slice(sortIndexFrom, sortIndexTo)
+}
+console.log(sortFromIndexOptimized(arrCitizens, 2, 5));
 
 
 
