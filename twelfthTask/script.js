@@ -37,7 +37,7 @@ const arrCitizens = [
 ];
 const calcSummInArray = (array) => {
     const result = array.map(person => {  
-        return Object.values(person).filter((val) => typeof val === 'number').reduce((sum, current) => sum + current, 0);
+        return Object.values(person).filter((val) => typeof val === 'number').reduce((sum, current) => sum + current);
     })
     return result.sort((b, a) => +a - +b);
 }
