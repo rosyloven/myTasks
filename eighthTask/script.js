@@ -47,14 +47,3 @@ const findPropertyInArray = (array, skinValue) => {
     return array.find(el => el.skin_color === skinValue.toLowerCase()) ? true : false;
 }
 console.log(findPropertyInArray(arrCitizens, 'WhIte'));
-
-/*
-const findPropertyInArray = (array) => {array.map(person => {
-    const result = Object.values(person).map(key => {
-        console.log(key.includes('dark'));
-    });
-    return result
-})
-}
-console.log(findPropertyInArray(arrCitizens));
-*/
