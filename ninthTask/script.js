@@ -55,7 +55,8 @@ const mergeArrays = (arrayOne, arrayTwo) =>
 console.log(mergeArrays(arrCitizens, arrVillagers));
 */
 
-/* ------ Способ c удалением дубликатов (Код из константы result нагуглил, не очень понимаю, как работает)
+// Способ c удалением дубликатов (Код из константы result нагуглил, не очень понимаю, как работает. Перепробовал много способов, но с обьектами работает только этот)
+/*
 const mergeArrays = (arrayOne, arrayTwo) => {
     const arrForDeduplicate = [...arrayOne, ...arrayTwo];
     const result = arrForDeduplicate.filter((v,i,a)=>a.findIndex(t=>(t.place === v.place && t.name===v.name))===i)
