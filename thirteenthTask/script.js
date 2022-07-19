@@ -45,7 +45,6 @@ const arrCitizens = [
 ];
 
 const getArrayFromProperties = (array) => array.map(person => {
-    const value = Object.values(person);
-    return value;
+    return Object.values(person);
 });
 console.log(getArrayFromProperties(arrCitizens));
