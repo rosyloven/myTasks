@@ -55,12 +55,10 @@ const mergeArrays = (arrayOne, arrayTwo) =>
 console.log(mergeArrays(arrCitizens, arrVillagers));
 */
 
-/* ------ Способ с нерабочим удалением дубликатов (Не знаю, почему не работает, возможно в массиве обьектов вообще нет смысла удалять дубликаты)
+/* ------ Способ c удалением дубликатов (Код из константы result нагуглил, не очень понимаю, как работает)
 const mergeArrays = (arrayOne, arrayTwo) => {
     const prepeared = [...arrayOne, ...arrayTwo];
-    const result = prepeared.filter((element, index) => {
-        return prepeared.indexOf(element) === index;
-    });
+    const result = prepeared.filter((v,i,a)=>a.findIndex(t=>(t.place === v.place && t.name===v.name))===i)
     return result;
 }
 console.log(mergeArrays(arrCitizens, arrVillagers));
