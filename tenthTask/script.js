@@ -48,6 +48,6 @@ const arrCitizens = [
 ];
 
 const sortArrayByMass = (array) => {   
-    return array.sort((a, b) => +a.mass > +b.mass ? 1 : -1);
+    return array.sort((a, b) => +a.mass - +b.mass);
 }
 console.log(sortArrayByMass(arrCitizens));
