@@ -35,22 +35,6 @@ const arrCitizens = [
     weight: 45,
     }, 
 ];
-//const sumValues = (obj) => Object.keys(obj).reduce((acc, value) => acc + obj[value], 0);
-//console.log(calcSummInArray(arrCitizens));
-/*
-const sumValues = (obj) => {
-    return Object.values(object2).filter((val) => typeof val === 'number').reduce((sum, current) => sum + current, 0);
-}
-*/
-
-
-//console.log(sumValues(object2));
-/*
-const sumValues = (obj) => {
-    return Object.values(obj).filter((val) => typeof val === 'number').reduce((sum, current) => sum + current, 0);
-}
-*/
-
 const calcSummInArray = (array) => {
     const result = array.map(person => {  
         return Object.values(person).filter((val) => typeof val === 'number').reduce((sum, current) => sum + current, 0);
@@ -58,5 +42,3 @@ const calcSummInArray = (array) => {
     return result.sort((b, a) => +a - +b);
 }
 console.log(calcSummInArray(arrCitizens));
-
-//console.log(sumValues(object2));
