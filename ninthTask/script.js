@@ -57,8 +57,8 @@ console.log(mergeArrays(arrCitizens, arrVillagers));
 
 /* ------ Способ c удалением дубликатов (Код из константы result нагуглил, не очень понимаю, как работает)
 const mergeArrays = (arrayOne, arrayTwo) => {
-    const prepeared = [...arrayOne, ...arrayTwo];
-    const result = prepeared.filter((v,i,a)=>a.findIndex(t=>(t.place === v.place && t.name===v.name))===i)
+    const arrForDeduplicate = [...arrayOne, ...arrayTwo];
+    const result = arrForDeduplicate.filter((v,i,a)=>a.findIndex(t=>(t.place === v.place && t.name===v.name))===i)
     return result;
 }
 console.log(mergeArrays(arrCitizens, arrVillagers));
