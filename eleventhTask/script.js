@@ -48,6 +48,3 @@ const arrayToString = (array) => array.map(person => {
     return Object.values(person).filter((val) => typeof val === 'string').join(', ');
 });
 console.log(arrayToString(arrCitizens));
-
-    //.reduce((sum, current) => sum + current, 0);console.log(prepearedString)
-    //return [`${prepearedString}, ${person}`];
