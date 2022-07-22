@@ -45,6 +45,6 @@ const arrCitizens = [
 ];
 
 const arrayToString = (array) => array.map(person => {
-    return Object.values(person).filter((val) => typeof val === 'string').join(', ');
+    return Object.values(person).filter((val) => typeof val === 'string').join('; ');
 });
 console.log(arrayToString(arrCitizens));
