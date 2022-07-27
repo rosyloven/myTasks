@@ -43,4 +43,4 @@ const getFilteredArray = (array, arrayGender) => {
     const result = array.filter(person => person.gender === arrayGender.toLowerCase());
     return result;
     }
-getFilteredArray(arrCitizens, 'FEmALe');
+getFilteredArray(arrCitizens, 'femaLe');
