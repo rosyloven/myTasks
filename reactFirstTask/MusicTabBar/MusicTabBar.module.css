@@ -1,0 +1,26 @@
+.tabsContainer {
+    font-family: Arial;
+    color: #05386B;
+    height: 300px;
+    width: 500px;
+    border: 1px solid #05386B;
+    border-radius: 30px;
+    box-shadow: 1px 1px #05386B;
+}
+.tabItems {
+    margin: 30px;
+    border-bottom: 1px solid #05386B;
+    text-align: center;
+}
+.item {
+    display: inline-block;
+    width: 145px;
+    height: 40px;
+    font-size: 16px;
+}
+.tabContent {
+    margin-left: 30px;
+}
+.item:active {
+    color: #5CDB95;
+}
